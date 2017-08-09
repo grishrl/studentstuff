@@ -59,7 +59,7 @@ angular.module('myApp',[]).controller('student',function($scope){
         growth=0;
       }else if(secondYear>=2.5 && secondYear<=3.5){
         growth=1;
-      }else if(secondYear>=4){
+      }else if(secondYear==4){
         growth=1.2
       }else if(secondYear==5){
         growth=1.25
@@ -69,7 +69,7 @@ angular.module('myApp',[]).controller('student',function($scope){
         growth=0;
       }else if(secondYear>=3 && secondYear<=3.5){
         growth=1;
-      }else if(secondYear>=4){
+      }else if(secondYear==4){
         growth=1.2
       }else if(secondYear==5){
         growth=1.25
@@ -99,8 +99,10 @@ angular.module('myApp',[]).controller('student',function($scope){
         growth=1.25
       }
     }else if(firstYear == 5){
-      if(secondYear<=5){
-        growth='****';
+      if(secondYear<5){
+        growth=0;
+      }else{
+        growth=1;
       }
     }
     return growth;
