@@ -47,7 +47,7 @@ angular.module('myApp',[]).controller('student',function($scope){
     }else if(firstYear == 1.5){
       if(secondYear<2){
         growth=0;
-      }else if(secondYear>=2 && c<=2.5){
+      }else if(secondYear>=2 && secondYear<=2.5){
         growth=1;
       }else if(secondYear>=3&&secondYear<=4){
         growth=1.2
