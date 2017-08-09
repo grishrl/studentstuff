@@ -99,7 +99,7 @@ angular.module('myApp',[]).controller('student',function($scope){
         growth=1.25
       }
     }else if(firstYear == 5){
-      if(secondYear=<5){
+      if(secondYear<=5){
         growth='****';
       }
     }
